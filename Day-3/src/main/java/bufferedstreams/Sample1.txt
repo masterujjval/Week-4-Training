@@ -1,0 +1,6 @@
+FileReader
+
+FileReader is useful to read data in the form of characters from a ‘text’ file.
+
+This class inherited from the InputStreamReader Class.
+The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate. To specify these values yourself, construct an InputStreamReader on a FileInputStream.
