@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class UserRegistration {
 
-    // ✅ Method to Register User
+    //   Method to Register User
     public static String registerUser(String username, String email, String password) {
         if (username == null || username.length() < 3) {
             throw new IllegalArgumentException("Invalid username! Must be at least 3 characters.");
@@ -22,7 +22,7 @@ public class UserRegistration {
         return "User Registered Successfully!";
     }
 
-    // ✅ JUnit Test Cases
+    //   JUnit Test Cases
     @Test
     public void testValidRegistration() {
         assertEquals("User Registered Successfully!", registerUser("JohnDoe", "john@example.com", "Password1"));
@@ -50,10 +50,10 @@ public class UserRegistration {
         assertEquals("Invalid password! Must be 8+ characters, 1 uppercase, and 1 digit.", ex2.getMessage());
     }
 
-    // ✅ Manual Testing via Main Method
+    //   Manual Testing via Main Method
     public static void main(String[] args) {
         try {
-            System.out.println(registerUser("JohnDoe", "john@example.com", "Password1"));  // ✅ Valid
+            System.out.println(registerUser("JohnDoe", "john@example.com", "Password1"));  //   Valid
             System.out.println(registerUser("JD", "valid@mail.com", "Password1"));  // ❌ Invalid username
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());

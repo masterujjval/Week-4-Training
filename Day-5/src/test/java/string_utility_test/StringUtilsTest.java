@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilsTest {
 
-    // ✅ String Utility Methods
+    //   String Utility Methods
     static class StringUtils {
 
         // Reverse a String
@@ -25,7 +25,7 @@ public class StringUtilsTest {
         }
     }
 
-    // ✅ Test Cases using JUnit
+    //   Test Cases using JUnit
     StringUtils utils = new StringUtils();
 
     @Test

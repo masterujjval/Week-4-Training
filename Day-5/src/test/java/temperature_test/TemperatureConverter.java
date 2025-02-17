@@ -5,17 +5,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TemperatureConverter {
 
-    // ✅ Method to Convert Celsius to Fahrenheit
+    //   Method to Convert Celsius to Fahrenheit
     public static double celsiusToFahrenheit(double celsius) {
         return (celsius * 9 / 5) + 32;
     }
 
-    // ✅ Method to Convert Fahrenheit to Celsius
+    //   Method to Convert Fahrenheit to Celsius
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
     }
 
-    // ✅ JUnit Test Cases
+    //   JUnit Test Cases
     @Test
     public void testCelsiusToFahrenheit() {
         assertEquals(32.0, celsiusToFahrenheit(0), 0.01, "0°C should be 32°F");
@@ -30,7 +30,7 @@ public class TemperatureConverter {
         assertEquals(37.0, fahrenheitToCelsius(98.6), 0.01, "98.6°F should be 37°C");
     }
 
-    // ✅ Main Method to Test Manually
+    //   Main Method to Test Manually
     public static void main(String[] args) {
         System.out.println("0°C to Fahrenheit: " + celsiusToFahrenheit(0));
         System.out.println("100°C to Fahrenheit: " + celsiusToFahrenheit(100));

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ListManagerTest {
 
-    // ✅ ListManager Class
+    //   ListManager Class
     static class ListManager {
 
         // Add element to the list
@@ -26,7 +26,7 @@ public class ListManagerTest {
         }
     }
 
-    // ✅ JUnit Test Cases
+    //   JUnit Test Cases
     ListManager manager = new ListManager();
 
     @Test

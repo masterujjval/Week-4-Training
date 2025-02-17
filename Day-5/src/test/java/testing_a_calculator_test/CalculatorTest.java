@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
 
-    // ✅ Calculator Logic
+    //   Calculator Logic
     static class Calculator {
 
         public int add(int a, int b) {
@@ -28,7 +28,7 @@ public class CalculatorTest {
         }
     }
 
-    // ✅ Test Cases using JUnit
+    //   Test Cases using JUnit
     Calculator calc = new Calculator();
 
     @Test

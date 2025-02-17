@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DivisionTest {
 
-    // ✅ Division Class
+    //   Division Class
     static class Calculator {
         public int divide(int a, int b) {
             if (b == 0) {
@@ -15,7 +15,7 @@ public class DivisionTest {
         }
     }
 
-    // ✅ JUnit Test Cases
+    //   JUnit Test Cases
     Calculator calculator = new Calculator();
 
     @Test

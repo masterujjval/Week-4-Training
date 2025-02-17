@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class DateFormatter {
 
-    // ✅ Method to Convert yyyy-MM-dd → dd-MM-yyyy
+    //   Method to Convert yyyy-MM-dd → dd-MM-yyyy
     public static String formatDate(String inputDate) {
         try {
             SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -21,7 +21,7 @@ public class DateFormatter {
         }
     }
 
-    // ✅ JUnit Test Cases
+    //   JUnit Test Cases
     @Test
     public void testValidDate() {
         assertEquals("15-02-2025", formatDate("2025-02-15"), "Conversion failed for 2025-02-15");
@@ -35,7 +35,7 @@ public class DateFormatter {
         assertEquals("Invalid Date", formatDate("2025-15-10"), "Wrong month issue");
     }
 
-    // ✅ Manual Testing via Main Method
+    //   Manual Testing via Main Method
     public static void main(String[] args) {
         System.out.println("Formatted Date: " + formatDate("2025-02-15"));
         System.out.println("Formatted Date: " + formatDate("2000-01-01"));

@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PerformanceTest {
 
-    // ✅ Method jo 3 sec tak rukta hai
+    //  Method jo 3 sec tak rukta hai
     public static String longRunningTask() {
         try {
             Thread.sleep(2000); // 2second delay
@@ -19,7 +19,7 @@ public class PerformanceTest {
         return "Completed";
     }
 
-    // ✅ Test jo 2 sec se zyada hone par fail ho jayega
+    //  Test jo 2 sec se zyada hone par fail ho jayega
     @Test
     @Timeout(value = 3, unit = TimeUnit.SECONDS) // 2 sec se zyada time nahi lena chahiye
     public void testLongRunningTask() {
